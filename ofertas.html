@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ofertas </title>
+  <link rel="icon" href="./imagenes/infinito.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f7ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #005fa3;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077cc;
+      margin-bottom: 30px;
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .offer-details {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .offer-details h3 {
+      margin: 10px 0;
+      color: #005fa3;
+    }
+
+    .offer-details p {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .offer-details .price {
+      color: #d10000;
+      font-weight: bold;
+    }
+
+    .offer-details button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: none;
+      background: #0077cc;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .offer-details button:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rumbo Infinito</h1>
+        <p>¡Explora sin límites, vive sin fronteras!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="destinos.html">Destinos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <h2>Ofertas Imperdibles</h2>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <img src="./imagenes/26.jpg" alt="Caribe">
+        <div class="offer-details">
+          <h3>Caribe Todo Incluido</h3>
+          <p class="price">$899 USD</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="./imagenes/25.jpg" alt="Europa">
+        <div class="offer-details">
+          <h3>Tour por Europa</h3>
+          <p class="price">$1499 USD</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="./imagenes/42.jpg" alt="Asia">
+        <div class="offer-details">
+          <h3>Escapada a Asia</h3>
+          <p class="price">$1099 USD</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="./imagenes/41.jpg" alt="Crucero">
+        <div class="offer-details">
+          <h3>Crucero de Lujo</h3>
+          <p class="price">$1299 USD</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Rumbo Infinito | Todos los derechos reservados.</p>
+    <p>Estudiante: Diego Alexander Guerrero Villota </p>
+    Email: contacto@rumboinfinito.com  |  Teléfono: +57 300 123 4567  |  Horario: Lunes a Viernes, 9am - 6pm 
+    <br>
+    Dirección: Calle 123 #45-67, Bogotá, Colombia
+  </footer>
+
+</body>
+</html>

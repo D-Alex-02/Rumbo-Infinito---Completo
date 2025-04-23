@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumbo infinito</title>
+    <link rel="stylesheet" href="estilos1.css">
+    <link rel="icon" href="./imagenes/infinito.png" type="image/png">
+    <style>  
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rumbo Infinito</h1>
+        <p>¡Explora sin límites, vive sin fronteras!</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="destinos.html">Destinos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<div class="hero">
+    <img src="./imagenes/c.jpeg" class="active" alt="Playa">
+    <img src="./imagenes/a.jpg" alt="Montaña">
+    <img src="./imagenes/40.jpg" alt="Ciudad">
+
+    <div class="hero-text">
+        ¡Explora el mundo con nosotros!
+    </div>
+</div>
+
+<div class="content">
+    <h2>Destinos Populares</h2>
+    <div class="card-container">
+
+        <a href="caribe.html" class="card">
+            <img src="./imagenes/22.jpg" alt="Playa">
+            <h3>Caribe</h3>
+            <p>Aguas cristalinas, arena blanca y el mejor clima para relajarte.</p>
+        </a>
+
+        <a href="losalpes.html" class="card">
+            <img src="./imagenes/23.jpg" alt="Montaña">
+            <h3>Los Alpes</h3>
+            <p>Naturaleza, nieve y aventura en las montañas más famosas del mundo.</p>
+        </a>
+
+        <a href="paris.html" class="card">
+            <img src="./imagenes/29.jpg" alt="Ciudad">
+            <h3>París</h3>
+            <p>La ciudad del amor te espera con su cultura, historia y gastronomía.</p>
+        </a>
+
+    </div>
+    
+    <!-- NUEVA SECCIÓN SOBRE NOSOTROS -->
+    <div class="content">
+        <h2>Sobre Nosotros</h2>
+        <div class="card-container">
+    
+            <a href="queesrumboinfinito.html" class="card">
+                <img src="./imagenes/31.jpg" alt="Que es rumbo infinito">
+                <h3>¿Qué es Rumbo Infinito?</h3>
+                <p>Descubre quiénes somos, cómo nacimos y qué nos mueve a explorar el mundo contigo.</p>
+            </a>
+    
+            <a href="nuestrafilosofia.html" class="card">
+                <img src="./imagenes/30.jpg" alt="Nuestra Filosofía">
+                <h3>Nuestra Filosofía</h3>
+                <p>Creemos en los viajes como experiencias que cambian vidas, no solo como destinos.</p>
+            </a>
+
+            <a href="tiposdeviajes.html" class="card">
+                <img src="./imagenes/44.jpg" alt="Que es rumbo infinito">
+                <h3>Tipos de viajes</h3>
+                <p>Cada viajero es diferente, y en Rumbo Infinito lo sabemos. Por eso, ofrecemos una variedad de contenidos adaptados a distintos estilos de viaje.</p>
+            </a>
+
+            <a href="recursosuconcejos.html" class="card">
+                <img src="./imagenes/37.jpg" alt="Recursos y consejos">
+                <h3>Recursos y Consejos</h3>
+                <p>Guías, tips y herramientas para que planees tu aventura de la mejor forma posible.</p>
+            </a>
+    
+        </div>
+    </div>
+    
+</div>
+
+<footer>
+    <p>© 2025 Rumbo Infinito | Todos los derechos reservados.</p>
+    <p>Estudiante: Diego Alexander Guerrero Villota </p>
+    Email: contacto@rumboinfinito.com  |  Teléfono: +57 300 123 4567  |  Horario: Lunes a Viernes, 9am - 6pm 
+    <br>
+    Dirección: Calle 123 #45-67, Bogotá, Colombia
+</footer>
+
+<script>
+    let current = 0;
+    const images = document.querySelectorAll('.hero img');
+    setInterval(() => {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+    }, 4000); // 4000ms = 4 segundos
+</script>
+
+</body>
+</html>
